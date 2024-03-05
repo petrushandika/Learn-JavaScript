@@ -62,3 +62,44 @@ function calculate() {
         }
     }
 }
+
+function heads() {
+    const flip = Math.random();
+
+    let guess = '';
+    if (flip < 0.5) {
+        guess = 'heads';
+    } else {
+        guess = 'tails';
+    }
+
+    let result = '';
+    if (guess === 'heads') {
+        result = 'Tie!';
+    } else {
+        result = 'You Win!';
+    }
+    
+    alert(`You picked heads, Computer picked ${guess}. ${result}`);
+}
+
+function tails() {
+    const flip = Math.random();
+
+    let guess = '';
+
+    if (flip < 0.5) {
+        guess = 'heads';
+    } else {
+        guess = 'tails';
+    }
+
+    let result = '';
+    if (guess === 'heads') {
+        result = 'You Win!';
+    } else {
+        result = 'Tie!';
+    }
+
+    alert(`You picked tails, Computer picked ${guess}. ${result}`);
+}
