@@ -63,6 +63,10 @@ function calculate() {
     }
 }
 
+/*
+Coin Flip 
+*/
+
 function heads() {
     const flip = Math.random();
 
