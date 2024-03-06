@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/shipping-calculator.css">
+    <script src="js/shipping-calculator.js"></script>
+    <title>Shipping Calculator</title>
+</head>
+<body>
+    <!-- Amazon Shipping Calculator -->
+    <div class="shipping-calculator">
+        <p>Amazon Shipping Calculator</p>
+        <p>Orders < $40 = $10 Shipping</p>
+        <p>Order > $40 = Free Shipping</p>
+        <a href="subscribe-button.html">Subscribe Button</a>
+        <a href="rock-paper-scissors.html">Rock Paper Scissors</a>
+        <input class="input-order" onkeydown="costKeydown(event)" type="text" placeholder="Cost of order">
+        <button onclick="calculate()">Calculate</button>
+        <p class="total-cost"></p>
+    </div>
+</body>
+</html>
