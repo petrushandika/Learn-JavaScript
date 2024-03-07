@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/main.js"></script>
+    <title>Exercise</title>
+</head>
+<body>
+    <button>One</button>
+    <button class="two">Two</button>
+
+    <br><br>
+
+    <button class="heads">Heads</button>
+    <button class="tails">Tails</button>
+    <p class="result"></p>
+
+    <input type="text" placeholder="Name" class="inputName" onkeydown="handleKeyDown(event)">
+    <button class="submitButton" onclick="submit()">Submit</button>
+    <p class="resultName"></p>
+
+    <!-- Amazon Shipping Calculator -->
+    <p>Amazon Shipping Calculator</p>
+    <p>Orders < $40 = $10 Shipping</p>
+    <p>Order > $40 = Free Shipping</p>
+    <input class="input-order" onkeydown="costKeydown(event)" type="text" placeholder="Cost of order">
+    <button onclick="calculate()">Calculate</button>
+    <p class="total-cost"></p>
+
+    <input class="input" type="text" placeholder="Type something" onkeyup="inputKey(event)">
+    <p class="resultInput"></p>
+
+</body>
+</html>
+
