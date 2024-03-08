@@ -75,3 +75,128 @@ function inputKey(event) {
     document.querySelector('.resultInput').innerHTML = valueInput;
 }
 
+/*
+Copy exercise before and create paragraph to display the quantity
+*/
+let cartQuantity = 0;
+
+function add() {
+    console.log('Item added to cart!');
+}
+
+function buy() {
+    console.log('Loading...');
+}
+
+function updateQuantity(amount) {
+    if (cartQuantity + amount > 10) {
+        console.log('The cart is full');
+    } else if (cartQuantity + amount < 0) {
+        console.log('Not enough items in the cart');
+    } else {
+        cartQuantity += amount;
+        console.log(cartQuantity);
+    }
+
+    showAdd();
+    displayCart();
+};
+
+function plusFour() {
+    updateQuantity(4);
+}
+
+function plusFive() {
+    updateQuantity(5);
+}
+
+function remove() {
+    updateQuantity(-1);
+}
+
+function minusTwo() {
+    updateQuantity(-2);
+}
+
+function minusThree() {
+    updateQuantity(-3);
+}
+
+function showAdd() {
+    const addQuantity = document.querySelector('.addQuantity');
+    addQuantity.innerHTML = `You add item: ${cartQuantity}`
+}
+
+function displayCart() {
+    const displayCartQuantity = document.querySelector('.cartDisplay');
+    displayCartQuantity.innerHTML = `Cart quantity: ${cartQuantity}`;
+}
+
+/*
+Copy exercise before and show the result with paragraph
+*/
+let calculation = '';
+
+function updateCalculation(value) {
+    calculation += value;
+    console.log(calculation);
+    calculator();
+}
+
+function one() {
+    updateCalculation('1');
+}
+
+function two() {
+    updateCalculation('2');
+}
+
+function three() {
+    updateCalculation('3');
+}
+
+function plus() {
+    updateCalculation(' + ');
+}
+
+function four() {
+    updateCalculation('4');
+}
+
+function five() {
+    updateCalculation('5');
+}
+
+function six() {
+    updateCalculation('6');
+}
+
+function minus() {
+    updateCalculation(' - ');
+}
+
+function seven() {
+    updateCalculation('7');
+}
+
+function eight() {
+    updateCalculation('8');
+}
+
+function nine() {
+    updateCalculation('9');
+}
+
+function equal() {
+    try {
+        return eval(calculation);
+    } catch (error) {
+        console.error(`${error}`);
+        return '';
+    }
+}
+
+function calculator() {
+    const calculate = document.querySelector('.calculatorResult');
+    calculate.innerHTML = `${calculation} = ${equal()}`;
+}
