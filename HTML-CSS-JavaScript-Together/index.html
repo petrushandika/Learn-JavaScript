@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>
+    <title>HTML CSS and JavaScript Together</title>
+</head>
+<body>
+    <!-- Amazon Button -->
+    <button class="amazon">Add to Cart</button>
+    <br><br>
+    
+    <!-- Uber Button -->
+    <button class="request">Request Now</button>
+    <button class="schedule">Schedule for later</button>
+    <br><br>
+
+    <!-- Add button with another method, use classList.contains('class-name') and use DOM -->
+    <button class="js-button">Test</button>
+
+    <!-- Create more button,when clicking the button add or remove the class 'is-toggled, and use any styling and use if(classList.contains('is-toggled')) to decided wheter to add or remove the class name' -->
+    <button class="is-toggled">ON</button>
+    <br><br>
+
+    <!-- Copy task before on DOM, if we type a number less than 0, display a red error message -->
+    <input class="input-order" onkeydown="costKeydown(event)" type="text" placeholder="Cost of order">
+    <button class="order-button" onclick="calculate()">Calculate</button>
+    <p class="total-cost"></p>
+    <br>
+
+    <!-- Exercise to make calculator -->
+    <div class="calculation">
+        <div class="container">
+            <button class="gray-btn" onclick="ac()">AC</button>
+            <button class="gray-btn" onclick="plusMinus()">+/-</button>
+            <button class="gray-btn" onclick="percent()">%</button>
+            <button class="orange-btn" onclick="devide()">/</button>
+            <button class="black-btn" onclick="seven()">7</button>
+            <button class="black-btn" onclick="eight()">8</button>
+            <button class="black-btn" ondblclick="nine()">9</button>
+            <button class="orange-btn" onclick="times()">×</button>
+            <button class="black-btn" onclick="four()">4</button>
+            <button class="black-btn" onclick="five()">5</button>
+            <button class="black-btn" onclick="six()">6</button>
+            <button class="orange-btn" onclick="minus()">-</button>
+            <button class="black-btn" onclick="one()">1</button>
+            <button class="black-btn" onclick="two()">2</button>
+            <button class="black-btn" onclick="three()">3</button>
+            <button class="orange-btn" onclick="plus()">+</button>
+            <button class="zero-btn" onclick="zero()">0</button>
+            <button class="black-btn" onclick="comma()">,</button>
+            <button class="orange-btn" onclick="equal()">=</button>
+            <p class="calculatorResult"></p>
+        </div>
+    </div>
+</body>
+</html>
