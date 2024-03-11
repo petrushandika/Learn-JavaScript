@@ -1,9 +1,8 @@
 # Learn-JavaScript
-
 *Learn JavaScript* repository is created for personal learning and self-practice purposes in mastering JavaScript. With structured materials, clear code examples, and easily understandable explanations, its goal is to facilitate effective learning. This repository is designed to support individual learning journeys, providing a solid foundation for understanding the fundamental concepts and practical applications of JavaScript in web and application development.
 
-### JavaScript Basics:
-
+### JavaScript Basics
+---
 - [x] **alert('...');** <br>
 Use this command to display an alert message to the user in the browser. <br>
 ```javascript
@@ -31,7 +30,7 @@ console.log(message); // Log the message to the console
 ```
 
 ### Numbers and Math
-
+---
 - [x] **Order of Operations:** <br>
 The sequence in which mathematical operations are performed. It follows the acronym BIDMAS/BODMAS, representing Brackets, Orders (exponents and roots, etc.), Division and Multiplication, and Addition and Subtraction.
 ```javascript
@@ -76,8 +75,8 @@ let floorNumber = Math.floor(originalNumber);
 let ceilNumber = Math.ceil(originalNumber); 
 ```
 
-## Strings:
-
+### Strings
+---
 - [x] **Quotation Marks:** <br>
 Strings can be enclosed using single quotes (''), double quotes ("") or backticks (``).
 ```javascript
@@ -122,8 +121,8 @@ a multi-line
 string.`;
 ```
 
-### Variables:
-
+### Variables
+---
 - [x] **Declaration:** <br>
 Variables can be declared using `let` followed by a name and an optional initial value.
 ```javascript
@@ -159,8 +158,8 @@ var variableName = value;
 eval('2 + 2'); // Returns 4
 ```
 
-### Boolean and If-Statement:
-
+### Boolean and If-Statement
+---
 - [x] **Boolean:** <br>
 Booleans represent values of either True or False.
 ```javascript
@@ -256,8 +255,8 @@ let guardResultOr = false || 'guardValueOr'; // Guard Operator (OR Operator)
 let defaultValue = undefined || 'default'; // Default Operator
 ```
 
-### Functions:
-
+### Functions
+---
 - [x] **Function Declaration:** <br>
 A function is declared using the `function` keyword, followed by a name and a pair of parentheses.
 ```javascript
@@ -304,8 +303,8 @@ let square = function(x) {
 };
 ```
 
-### Objects:
-
+### Objects
+---
 - [x] **Object Literal:** <br>
 Objects are created using curly braces `{}` and can contain properties and methods.
 ```javascript
@@ -384,8 +383,8 @@ const obj = {
 obj.method(); // Outputs: Shorthand Method
 ```
 
-### JSON (JavaScript Object Notation):
-
+### JSON (JavaScript Object Notation)
+---
 - [x] **Data Interchange:** <br>
 JSON is utilized when transferring data between different systems or platforms.
 
@@ -435,8 +434,8 @@ const storedUsername = localStorage.getItem('username');
 localStorage.removeItem('username');
 ```
 
-### Document Object Model (DOM):
-
+### Document Object Model (DOM)
+---
 - [x] **document.body:** <br>
 Represents the body element of the HTML document.
 ```javascript
@@ -490,8 +489,8 @@ elementVariable.onmouseleave = function() {
 };
 ```
 
-### HTML, CSS, JavaScript Together:
-
+### HTML, CSS, JavaScript Together
+---
 - [x] **Adding a Class:** <br>
 Use `classList.add()` to add a class to an HTML element, dynamically changing its style.
 ```javascript
@@ -504,7 +503,7 @@ Utilize `classList.remove()` to remove a class from an HTML element, adjusting i
 element.classList.remove('name-class');
 ```
 
-### Arrays:
+### Arrays
 
 - [x] **Array Index Position:** <br>
 Arrays use zero-based indexing to access and reference elements.
@@ -536,8 +535,8 @@ exampleArray.indexOf(3);     // Returns the index of the item 3
 exampleArray.length;         // Returns the number of elements
 ```
 
-### Loops:
-
+### Loops
+---
 - [x] **While Loop:**
 The `while` loop repeats a block of code while a specified condition is true.
 ```javascript
