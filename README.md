@@ -611,3 +611,113 @@ while (i <= 10) {
 }
 ```
 
+### Advanced Functions
+---
+- [x] **Normal Function:** <br>
+Traditional function declaration with a name that can be called later in the code.
+```javascript
+function greeting() {
+    console.log('Hello');
+}
+greeting();
+```
+
+- [x] **Anonymous Function:** <br>
+A function without a declared name, often assigned to a variable for later use.
+```javascript
+const greet = function() {
+    console.log('Hello');
+};
+greet();
+```
+
+- [x] **Method (Function Saved Inside an Object):** <br>
+A function stored as a property within an object.
+```javascript
+const data = {
+    name: 'Petrus',
+    age: function() {
+        console.log(21);
+    }
+};
+data.age();
+```
+
+- [x] **Passing a Value into a Function:** <br>
+Functions can accept parameters (arguments) to receive and work with external values.
+```javascript
+function display(parameter) {
+    console.log(parameter);
+}
+display('Hello');
+```
+
+- [x] **Passing a Function into Another Function (Callback):** <br>
+A function passed as an argument to another function and executed later, commonly used for asynchronous operations.
+```javascript
+function run(callback) {
+    callback();
+}
+run(function() {
+    console.log('Testing');
+});
+```
+
+- [x] **setTimeout():** <br>
+Delays the execution of a function by a specified time (in milliseconds).
+```javascript
+setTimeout(function() {
+    console.log('This is setTimeout');
+}, 3000);
+// Asynchronous code
+console.log('Async appears first');
+```
+
+- [x] **setInterval():** <br>
+Repeatedly executes a function at specified intervals (in milliseconds).
+```javascript
+setInterval(function() {
+    console.log('This is setInterval');
+}, 3000);
+// Asynchronous code
+console.log('Async appears first');
+```
+
+- [x] **clearInterval():** <br>
+Stops the execution of a function set by setInterval().
+```javascript
+let count = 0;
+function printCount() {
+    console.log(count);
+    count++;
+    if (count > 5) {
+        clearInterval(intervalId);
+    }
+}
+const intervalId = setInterval(printCount, 1000);
+```
+
+- [x] **forEach():** <br>
+A concise and preferred way to iterate through elements of an array.
+```javascript
+['Study', 'Workout', 'Exercise'].forEach(function(value) {
+    console.log(value);
+});
+
+['Study', 'Workout', 'Exercise'].forEach(function(value, index) {
+    console.log(index);
+    console.log(value);
+});
+```
+
+- [x] **Continue:** <br>
+Skips the rest of the loop's code for the current iteration when a specific condition is met.
+```javascript
+['Workout', 'Study', 'Exercise'].forEach(function(value, index) {
+    if (value === 'Study') {
+    return;
+}
+    console.log(index);
+    console.log(value);
+});
+```
