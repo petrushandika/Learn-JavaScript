@@ -32,7 +32,7 @@ console.log(message); // Log the message to the console
 ### Numbers and Math
 ---
 - [x] **Order of Operations:** <br>
-The sequence in which mathematical operations are performed. It follows the acronym BIDMAS/BODMAS, representing Brackets, Orders (exponents and roots, etc.), Division and Multiplication, and Addition and Subtraction.
+The sequence in which mathematical operations are performed. Representing Brackets, Orders (exponents and roots, etc.), Division and Multiplication, and Addition and Subtraction.
 ```javascript
 let result = (5 + 3) * 2 - 4 / 2; // The result is 16
 ```
