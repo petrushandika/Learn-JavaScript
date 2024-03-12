@@ -93,9 +93,3 @@ function deleteTodo(index) {
 document.addEventListener('DOMContentLoaded', () => {
     renderAnything();
 })
-
-
-
-
-
-
