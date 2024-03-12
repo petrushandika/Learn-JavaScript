@@ -23,7 +23,7 @@ let intervalId;
 
 function autoPlay() {
     if (!isAutoPlay) {
-        intervalId = setInterval(function() {
+        intervalId = setInterval(() => {
         const userPlay = computer();
         user(userPlay);
         isAutoPlay = true;
@@ -33,6 +33,30 @@ function autoPlay() {
         isAutoPlay = false;
     }
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.rock-btn').addEventListener('click', () => {
+        user('Rock');
+    })
+    
+    document.querySelector('.paper-btn').addEventListener('click', () => {
+        user('Paper');
+    })
+    
+    document.querySelector('.scissors-btn').addEventListener('click', () => {
+        user('Scissors');
+    });
+    
+    document.body.addEventListener('keydown', (event) => {
+        if (event.key === 'r') {
+            user('Rock');
+        } else if (event.key === 'p') {
+            user('Paper');
+        } else if (event.key === 's') {
+            user('Scissors');
+        }
+    });
+})
 
 function user(userPlay) {
     const computerPlay = computer();

@@ -18,6 +18,13 @@ function renderAnything() {
     document.querySelector('.result-any').innerHTML = addAny;
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    const addButton = document.querySelector('.add-btn');
+    addButton.addEventListener('click', () => {
+        todoAnything();
+    })
+})
+
 function todoAnything() {
     const addAnything = document.querySelector('.todo-three');
     const anything = addAnything.value;
@@ -26,8 +33,6 @@ function todoAnything() {
     const dueDate = dateInput.value;
 
     todoAny.push({
-        // anything: name,
-        // dueDate: dueDate,
         anything,
         dueDate
     });

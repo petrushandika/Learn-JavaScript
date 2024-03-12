@@ -1,0 +1,1 @@
+console.log([1, -3, 5].filter((value, index) => { return value >= 0;}))
