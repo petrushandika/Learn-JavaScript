@@ -721,3 +721,101 @@ Skips the rest of the loop's code for the current iteration when a specific cond
     console.log(value);
 });
 ```
+
+- [x] **Basic Arrow Function:** <br>
+     - Defines a basic arrow function `arrowFunction` that takes two parameters (`test` and `done`).
+     - Logs 'Hello World' to the console when the function is called.
+     - Invokes the function with `arrowFunction()`.
+```javascript
+const arrowFunction = (test, done) => {
+    console.log('Hello', 'World');
+};
+arrowFunction();
+```
+
+- [x] **One Parameter:**
+     - Defines an arrow function `oneParameter` with a single parameter `test`.
+     - Logs the result of `test + 1` to the console.
+     - Invokes the function with `oneParameter(2)`.
+```javascript
+const oneParameter = test => {
+    console.log(test + 1);
+};
+oneParameter(2);
+```
+
+- [x] **One Line Function:**
+     - Creates an arrow function `oneLine` with no parameters.
+     - Returns the result of `3 + 2` directly.
+     - Logs the result of `oneLine()` to the console.
+```javascript
+const oneLine = () => 3 + 2;
+console.log(oneLine());
+```
+
+- [x] **Event Listener (.addEventListener()):**
+     - Retrieves an HTML element with the id 'myButton'.
+     - Adds a click event listener to the button using `addEventListener`.
+     - The listener is an arrow function that logs 'Button clicked' to the console when the button is clicked.
+```javascript
+const button = document.getElementById('myButton');
+button.addEventListener('click', () => {
+    console.log('Button clicked');
+});
+```
+
+- [x] **Remove Event Listener (.removeEventListener()):**
+     - Removes the previously added click event listener from the button.
+```javascript
+button.removeEventListener('click', () => {
+    console.log('Button clicked');
+});
+```
+
+- [x] **Event Listener with 'keydown' (.addEventListener()):**
+     - Adds a 'keydown' event listener to the entire document.
+     - The listener is an arrow function that logs the pressed key to the console.
+```javascript
+document.addEventListener('keydown', event => {
+    console.log('Key pressed:', event.key);
+});
+```
+
+- [x] **Query Selector All (.querySelectorAll()):**
+     - Retrieves all elements with the class 'myClass' using `querySelectorAll`.
+```javascript
+    const elements = document.querySelectorAll('.myClass');
+```
+
+- [x] **Filter (.filter()):**
+     - Uses the `filter` method to create a new array with only values greater than or equal to 0.
+     - The filtering condition is defined using an arrow function.
+```javascript
+console.log([1, -3, 5].filter((value, index) => value >= 0));
+```
+
+- [x] **Map (.map()):**
+     - Uses the `map` method to create a new array by adding 10 to each element of the original array.
+     - The transformation is defined using an arrow function.
+```javascript
+console.log([1, 1, 3].map(value => value + 10));
+```
+
+- [x] **Closure:**
+     - Defines an outerFunction containing an innerFunction within its scope.
+     - innerFunction is enclosed within outerFunction, forming a closure.
+     - Due to closure, innerFunction retains access to the outerVariable.
+     - outerFunction returns innerFunction, creating a closure by preserving the environment.
+     - Assigns the result of outerFunction() to closureExample.
+     - Invoking closureExample prints 'I am outer!' to the console, demonstrating access to outerVariable even after outerFunction has completed execution.
+```javascript
+function outerFunction() {
+    let outerVariable = 'I am outer!';
+    function innerFunction() {
+        console.log(outerVariable);
+    }
+    return innerFunction;
+}
+const closureExample = outerFunction();
+closureExample(); // Prints 'I am outer!'
+```
