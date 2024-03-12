@@ -504,7 +504,7 @@ element.classList.remove('name-class');
 ```
 
 ### Arrays
-
+---
 - [x] **Array Index Position:** <br>
 Arrays use zero-based indexing to access and reference elements.
 ```javascript
